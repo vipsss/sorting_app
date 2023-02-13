@@ -24,9 +24,11 @@ class SortingLogic{
         guard self.isLastStep() else {
             return
         }
-        
+    
         let sortResult = self.sortedList.selectionSort(step: step)
         self.history.append(sortResult)
+        
+        //TODO: check if already sorted
         
         self.sortedList = sortResult
         self.step += 1
@@ -52,6 +54,7 @@ class SortingLogic{
     }
     
     private func isLastStep() -> Bool {
+        //TODO: some elements can be sorted itself, no need iterate all elements
         return self.step < self.list.count - 1
     }
     
