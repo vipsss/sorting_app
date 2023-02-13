@@ -11,9 +11,16 @@
 		63A63266299A6CF90084BB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63265299A6CF90084BB16 /* AppDelegate.swift */; };
 		63A63268299A6CF90084BB16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63267299A6CF90084BB16 /* SceneDelegate.swift */; };
 		63A6326A299A6CF90084BB16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63269299A6CF90084BB16 /* ViewController.swift */; };
-		63A6326D299A6CF90084BB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A6326B299A6CF90084BB16 /* Main.storyboard */; };
 		63A6326F299A6CFA0084BB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A6326E299A6CFA0084BB16 /* Assets.xcassets */; };
 		63A63272299A6CFA0084BB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A63270299A6CFA0084BB16 /* LaunchScreen.storyboard */; };
+		63A6327A299A6F970084BB16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63279299A6F970084BB16 /* MainViewController.swift */; };
+		63A6327E299A6FC30084BB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A6327D299A6FC30084BB16 /* Main.storyboard */; };
+		63A63283299A72DA0084BB16 /* SortingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A63282299A72DA0084BB16 /* SortingViewController.storyboard */; };
+		63A63285299A72F10084BB16 /* SortingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63284299A72F10084BB16 /* SortingViewController.swift */; };
+		63A63287299A74610084BB16 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */; };
+		63A63289299A74A10084BB16 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63288299A74A10084BB16 /* Storyboard.swift */; };
+		63A6328B299A769E0084BB16 /* SortingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328A299A769E0084BB16 /* SortingModel.swift */; };
+		63A6328E299A7FCF0084BB16 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +30,17 @@
 		63A63265299A6CF90084BB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A63267299A6CF90084BB16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		63A63269299A6CF90084BB16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63A6326C299A6CF90084BB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63A6326E299A6CFA0084BB16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63A63271299A6CFA0084BB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A63273299A6CFA0084BB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A63279299A6F970084BB16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		63A6327D299A6FC30084BB16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		63A63282299A72DA0084BB16 /* SortingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SortingViewController.storyboard; sourceTree = "<group>"; };
+		63A63284299A72F10084BB16 /* SortingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingViewController.swift; sourceTree = "<group>"; };
+		63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		63A63288299A74A10084BB16 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		63A6328A299A769E0084BB16 /* SortingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModel.swift; sourceTree = "<group>"; };
+		63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sorting.swift"; sourceTree = "<group>"; };
 		CB109B024364CAE5E68103B0 /* Pods-SortingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SortingApp.debug.xcconfig"; path = "Target Support Files/Pods-SortingApp/Pods-SortingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +62,6 @@
 				CB109B024364CAE5E68103B0 /* Pods-SortingApp.debug.xcconfig */,
 				16824421DC8CBA969D643F61 /* Pods-SortingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +86,70 @@
 		63A63264299A6CF90084BB16 /* SortingApp */ = {
 			isa = PBXGroup;
 			children = (
+				63A63280299A706E0084BB16 /* Helpers */,
+				63A6327F299A70660084BB16 /* Base */,
+				63A6327B299A6F9C0084BB16 /* ViewControllers */,
 				63A63265299A6CF90084BB16 /* AppDelegate.swift */,
 				63A63267299A6CF90084BB16 /* SceneDelegate.swift */,
-				63A63269299A6CF90084BB16 /* ViewController.swift */,
-				63A6326B299A6CF90084BB16 /* Main.storyboard */,
 				63A6326E299A6CFA0084BB16 /* Assets.xcassets */,
 				63A63270299A6CFA0084BB16 /* LaunchScreen.storyboard */,
 				63A63273299A6CFA0084BB16 /* Info.plist */,
 			);
 			path = SortingApp;
+			sourceTree = "<group>";
+		};
+		63A6327B299A6F9C0084BB16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63A63281299A72A60084BB16 /* Sorting */,
+				63A6327C299A6FAB0084BB16 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63A6327C299A6FAB0084BB16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63A63279299A6F970084BB16 /* MainViewController.swift */,
+				63A6327D299A6FC30084BB16 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		63A6327F299A70660084BB16 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				63A63269299A6CF90084BB16 /* ViewController.swift */,
+				63A63288299A74A10084BB16 /* Storyboard.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		63A63280299A706E0084BB16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */,
+				63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63A63281299A72A60084BB16 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				63A6328C299A7E3E0084BB16 /* Cells */,
+				63A63282299A72DA0084BB16 /* SortingViewController.storyboard */,
+				63A63284299A72F10084BB16 /* SortingViewController.swift */,
+				63A6328A299A769E0084BB16 /* SortingModel.swift */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		63A6328C299A7E3E0084BB16 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6CD093CD17A9FE201362A995 /* Frameworks */ = {
@@ -151,9 +219,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A63283299A72DA0084BB16 /* SortingViewController.storyboard in Resources */,
 				63A63272299A6CFA0084BB16 /* LaunchScreen.storyboard in Resources */,
 				63A6326F299A6CFA0084BB16 /* Assets.xcassets in Resources */,
-				63A6326D299A6CF90084BB16 /* Main.storyboard in Resources */,
+				63A6327E299A6FC30084BB16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,20 +261,18 @@
 				63A6326A299A6CF90084BB16 /* ViewController.swift in Sources */,
 				63A63266299A6CF90084BB16 /* AppDelegate.swift in Sources */,
 				63A63268299A6CF90084BB16 /* SceneDelegate.swift in Sources */,
+				63A63289299A74A10084BB16 /* Storyboard.swift in Sources */,
+				63A6328B299A769E0084BB16 /* SortingModel.swift in Sources */,
+				63A63285299A72F10084BB16 /* SortingViewController.swift in Sources */,
+				63A6327A299A6F970084BB16 /* MainViewController.swift in Sources */,
+				63A63287299A74610084BB16 /* UIViewController+Storyboard.swift in Sources */,
+				63A6328E299A7FCF0084BB16 /* Array+Sorting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63A6326B299A6CF90084BB16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63A6326C299A6CF90084BB16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63A63270299A6CFA0084BB16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
