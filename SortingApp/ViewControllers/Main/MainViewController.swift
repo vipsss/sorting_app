@@ -19,8 +19,6 @@ class MainViewController: ViewController {
         self.textView.layer.borderWidth = 1
         self.textView.layer.borderColor = UIColor.lightGray.cgColor
         self.textView.layer.cornerRadius = 10
-        
-        self.textView.text = "3,5,1,2,9"
     }
     
     private func prepareInputList(text: String) -> [Int] {
