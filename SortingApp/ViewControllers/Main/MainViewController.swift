@@ -22,7 +22,11 @@ class MainViewController: ViewController {
     }
     
     @IBAction func startSortingAction(_ sender: Any) {
+        
+        let logic = SortingLogic(list: [2,5,1,7,3])
+        
         let vc: SortingViewController = SortingViewController.instantiate(storyboard: .sorting)
+        vc.logic = logic
         self.present(vc, animated: true)
         
     }

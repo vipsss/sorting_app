@@ -19,8 +19,13 @@
 		63A63285299A72F10084BB16 /* SortingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63284299A72F10084BB16 /* SortingViewController.swift */; };
 		63A63287299A74610084BB16 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */; };
 		63A63289299A74A10084BB16 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63288299A74A10084BB16 /* Storyboard.swift */; };
-		63A6328B299A769E0084BB16 /* SortingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328A299A769E0084BB16 /* SortingModel.swift */; };
+		63A6328B299A769E0084BB16 /* SortingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328A299A769E0084BB16 /* SortingLogic.swift */; };
 		63A6328E299A7FCF0084BB16 /* Array+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */; };
+		63A63291299A83F90084BB16 /* SortItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6328F299A83F90084BB16 /* SortItemCell.swift */; };
+		63A63292299A83F90084BB16 /* SortItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A63290299A83F90084BB16 /* SortItemCell.xib */; };
+		63A63294299A84E60084BB16 /* SortingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63293299A84E60084BB16 /* SortingViewModel.swift */; };
+		63A63296299A8AC10084BB16 /* UICollectionViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63295299A8AC10084BB16 /* UICollectionViewCell+Identifier.swift */; };
+		63A63298299A8AE10084BB16 /* UICollectionView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A63297299A8AE10084BB16 /* UICollectionView+Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +44,13 @@
 		63A63284299A72F10084BB16 /* SortingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingViewController.swift; sourceTree = "<group>"; };
 		63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		63A63288299A74A10084BB16 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		63A6328A299A769E0084BB16 /* SortingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingModel.swift; sourceTree = "<group>"; };
+		63A6328A299A769E0084BB16 /* SortingLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingLogic.swift; sourceTree = "<group>"; };
 		63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sorting.swift"; sourceTree = "<group>"; };
+		63A6328F299A83F90084BB16 /* SortItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortItemCell.swift; sourceTree = "<group>"; };
+		63A63290299A83F90084BB16 /* SortItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortItemCell.xib; sourceTree = "<group>"; };
+		63A63293299A84E60084BB16 /* SortingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SortingViewModel.swift; path = ../../../../../Desktop/SortingViewModel.swift; sourceTree = "<group>"; };
+		63A63295299A8AC10084BB16 /* UICollectionViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		63A63297299A8AE10084BB16 /* UICollectionView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Nib.swift"; sourceTree = "<group>"; };
 		CB109B024364CAE5E68103B0 /* Pods-SortingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SortingApp.debug.xcconfig"; path = "Target Support Files/Pods-SortingApp/Pods-SortingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +140,8 @@
 			children = (
 				63A63286299A74610084BB16 /* UIViewController+Storyboard.swift */,
 				63A6328D299A7FCF0084BB16 /* Array+Sorting.swift */,
+				63A63295299A8AC10084BB16 /* UICollectionViewCell+Identifier.swift */,
+				63A63297299A8AE10084BB16 /* UICollectionView+Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -140,7 +152,8 @@
 				63A6328C299A7E3E0084BB16 /* Cells */,
 				63A63282299A72DA0084BB16 /* SortingViewController.storyboard */,
 				63A63284299A72F10084BB16 /* SortingViewController.swift */,
-				63A6328A299A769E0084BB16 /* SortingModel.swift */,
+				63A6328A299A769E0084BB16 /* SortingLogic.swift */,
+				63A63293299A84E60084BB16 /* SortingViewModel.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -148,6 +161,8 @@
 		63A6328C299A7E3E0084BB16 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63A6328F299A83F90084BB16 /* SortItemCell.swift */,
+				63A63290299A83F90084BB16 /* SortItemCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -223,6 +238,7 @@
 				63A63272299A6CFA0084BB16 /* LaunchScreen.storyboard in Resources */,
 				63A6326F299A6CFA0084BB16 /* Assets.xcassets in Resources */,
 				63A6327E299A6FC30084BB16 /* Main.storyboard in Resources */,
+				63A63292299A83F90084BB16 /* SortItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +278,11 @@
 				63A63266299A6CF90084BB16 /* AppDelegate.swift in Sources */,
 				63A63268299A6CF90084BB16 /* SceneDelegate.swift in Sources */,
 				63A63289299A74A10084BB16 /* Storyboard.swift in Sources */,
-				63A6328B299A769E0084BB16 /* SortingModel.swift in Sources */,
+				63A63294299A84E60084BB16 /* SortingViewModel.swift in Sources */,
+				63A63291299A83F90084BB16 /* SortItemCell.swift in Sources */,
+				63A63298299A8AE10084BB16 /* UICollectionView+Nib.swift in Sources */,
+				63A6328B299A769E0084BB16 /* SortingLogic.swift in Sources */,
+				63A63296299A8AC10084BB16 /* UICollectionViewCell+Identifier.swift in Sources */,
 				63A63285299A72F10084BB16 /* SortingViewController.swift in Sources */,
 				63A6327A299A6F970084BB16 /* MainViewController.swift in Sources */,
 				63A63287299A74610084BB16 /* UIViewController+Storyboard.swift in Sources */,

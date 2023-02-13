@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SortingModel {
+class SortingLogic{
     
     private var list: [Int]
     private var sortedList: [Int]
@@ -47,6 +47,20 @@ class SortingModel {
         sortedList = history.last ?? list
         
         print(sortedList)
+    }
+    
+    func isFirstStep() -> Bool {
+        return self.step > 0
+    }
+    
+    func isLastStep() -> Bool {
+        return step < list.count - 1
+    }
+    
+    func generateViewModel() -> SortingViewModel {
+        return SortingViewModel(isPreviousActive: self.isFirstStep(),
+                                isNextActive: self.isLastStep(),
+                                sortItems: self.sortedList)
     }
     
     
