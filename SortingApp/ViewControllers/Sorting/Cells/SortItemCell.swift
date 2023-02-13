@@ -13,7 +13,13 @@ class SortItemCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.label.font = .systemFont(ofSize: 25)
+        
+        self.backgroundColor = .lightGray
+        self.layer.cornerRadius = 5
+        self.layer.borderColor = UIColor.darkGray.cgColor
+        self.layer.borderWidth = 1
     }
 
 }

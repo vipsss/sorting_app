@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="biv-0b-jWv">
-                                <rect key="frame" x="0.0" y="165" width="390" height="645"/>
+                                <rect key="frame" x="15" y="157" width="360" height="638"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jUM-cj-cgF">
                                     <size key="itemSize" width="128" height="128"/>
@@ -28,30 +28,48 @@
                                 <cells/>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-TV-Thq">
-                                <rect key="frame" x="0.0" y="15" width="390" height="150"/>
+                                <rect key="frame" x="0.0" y="57" width="390" height="70"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gU-8f-MeO">
-                                        <rect key="frame" x="71" y="69" width="75" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gU-8f-MeO">
+                                        <rect key="frame" x="60" y="35" width="105" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="iEF-qn-Pf1"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="&lt;"/>
                                         <connections>
                                             <action selector="previousStep:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j8z-3t-1Xu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzg-0k-q62">
-                                        <rect key="frame" x="280" y="69" width="75" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzg-0k-q62">
+                                        <rect key="frame" x="225" y="35" width="105" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="RyL-IE-G5S"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="&gt;"/>
                                         <connections>
                                             <action selector="nextStep:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="62R-HR-XDT"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0x5-eG-mVX">
+                                        <rect key="frame" x="144.33333333333334" y="0.0" width="101.33333333333334" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="v8L-fK-Cvk"/>
+                                    <constraint firstItem="Uzg-0k-q62" firstAttribute="width" secondItem="3gU-8f-MeO" secondAttribute="width" id="GWU-j0-yJk"/>
+                                    <constraint firstAttribute="bottom" secondItem="3gU-8f-MeO" secondAttribute="bottom" constant="5" id="MRZ-YN-xW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uzg-0k-q62" secondAttribute="trailing" constant="60" id="S6d-6e-hcS"/>
+                                    <constraint firstItem="Uzg-0k-q62" firstAttribute="leading" secondItem="3gU-8f-MeO" secondAttribute="trailing" constant="60" id="blf-D0-XQr"/>
+                                    <constraint firstItem="3gU-8f-MeO" firstAttribute="leading" secondItem="VOc-TV-Thq" secondAttribute="leading" constant="60" id="dAI-by-is7"/>
+                                    <constraint firstItem="0x5-eG-mVX" firstAttribute="centerX" secondItem="VOc-TV-Thq" secondAttribute="centerX" id="gHU-7x-8nM"/>
+                                    <constraint firstItem="0x5-eG-mVX" firstAttribute="top" secondItem="VOc-TV-Thq" secondAttribute="top" id="hwY-19-lAl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uzg-0k-q62" secondAttribute="bottom" constant="5" id="tZf-7x-bjH"/>
+                                    <constraint firstAttribute="height" constant="70" id="v8L-fK-Cvk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -59,16 +77,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VOc-TV-Thq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="F35-lI-DJD"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="biv-0b-jWv" secondAttribute="trailing" id="KV8-c4-G17"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="biv-0b-jWv" secondAttribute="trailing" constant="15" id="KV8-c4-G17"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VOc-TV-Thq" secondAttribute="trailing" id="YcZ-rB-Ffh"/>
-                            <constraint firstItem="VOc-TV-Thq" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="15" id="gkP-NJ-d5j"/>
-                            <constraint firstItem="biv-0b-jWv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="h8L-aZ-eKC"/>
-                            <constraint firstItem="biv-0b-jWv" firstAttribute="top" secondItem="VOc-TV-Thq" secondAttribute="bottom" id="j6a-kA-e4U"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="biv-0b-jWv" secondAttribute="bottom" id="mtr-mh-bkJ"/>
+                            <constraint firstItem="biv-0b-jWv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="h8L-aZ-eKC"/>
+                            <constraint firstItem="biv-0b-jWv" firstAttribute="top" secondItem="VOc-TV-Thq" secondAttribute="bottom" constant="30" id="j6a-kA-e4U"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="biv-0b-jWv" secondAttribute="bottom" constant="15" id="mtr-mh-bkJ"/>
+                            <constraint firstItem="VOc-TV-Thq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="v8H-6A-lBi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="biv-0b-jWv" id="Apm-xJ-FaD"/>
+                        <outlet property="nextStepButton" destination="Uzg-0k-q62" id="fpk-4F-IV1"/>
+                        <outlet property="previosStepButton" destination="3gU-8f-MeO" id="m9r-cY-VFO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

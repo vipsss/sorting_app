@@ -18,43 +18,41 @@ class SortingLogic{
     init(list: [Int]) {
         self.list = list
         self.sortedList = list
-        
-        print("init list \(list)")
     }
     
     func nextIteration() {
-        guard step < list.count - 1 else {
+        guard self.isLastStep() else {
             return
         }
         
-        let sortResult = sortedList.selectionSort(step: step)
-        history.append(sortResult)
+        let sortResult = self.sortedList.selectionSort(step: step)
+        self.history.append(sortResult)
         
-        sortedList = sortResult
-        step += 1
+        self.sortedList = sortResult
+        self.step += 1
         
-        print(sortedList)
+        print(self.sortedList)
     }
     
     func previousIteration() {
-        guard step > 0 else {
+        guard self.isFirstStep() else {
             return
         }
         
-        step -= 1
-        _ = history.popLast()
+        self.step -= 1
+        _ = self.history.popLast()
         
-        sortedList = history.last ?? list
+        self.sortedList = history.last ?? list
         
-        print(sortedList)
+        print(self.sortedList)
     }
     
-    func isFirstStep() -> Bool {
+    private func isFirstStep() -> Bool {
         return self.step > 0
     }
     
-    func isLastStep() -> Bool {
-        return step < list.count - 1
+    private func isLastStep() -> Bool {
+        return self.step < self.list.count - 1
     }
     
     func generateViewModel() -> SortingViewModel {

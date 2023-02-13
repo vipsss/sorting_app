@@ -9,23 +9,24 @@ import UIKit
 
 class SortingViewController: UIViewController {
 
-    var viewModel: SortingViewModel?
-//    var m = SortingLogic(list: [2,5,1,7,3])
+    @IBOutlet weak var previosStepButton: UIButton!
+    @IBOutlet weak var nextStepButton: UIButton!
     
+    var viewModel: SortingViewModel?
     var logic: SortingLogic = SortingLogic(list: [])
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //TODO: add texts for labels from ViewModel
 
         self.collectionView.dataSource = self
         self.collectionView.registerCell(type: SortItemCell.self)
-        self.collectionView.backgroundColor = .yellow
         
-        let viewModel: SortingViewModel = SortingViewModel()
-        self.renderViewModel(viewModel)
+        let model = self.logic.generateViewModel()
+        self.renderViewModel(model)
     }
     
     @IBAction func previousStep(_ sender: Any) {
@@ -43,6 +44,10 @@ class SortingViewController: UIViewController {
     
     
     func renderViewModel(_ model: SortingViewModel) {
+        
+        self.previosStepButton.isEnabled = model.isPreviousActive
+        self.nextStepButton.isEnabled = model.isNextActive
+        
         self.viewModel = model
         self.collectionView.reloadData()
     }
@@ -64,7 +69,6 @@ extension SortingViewController: UICollectionViewDataSource  {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SortItemCell.identifier, for: indexPath) as! SortItemCell
         cell.label.text = "\(item)"
         
-        cell.backgroundColor = .cyan
         return cell
     }
     
